@@ -138,3 +138,14 @@ body {
     }
 
 }
+
+@media screen and (max-width: 376px) {
+    
+    .slide-background {
+        max-height: 812px;
+    }
+  
+    .image-and-buttons {
+        margin-bottom: 40px;
+    }
+}
