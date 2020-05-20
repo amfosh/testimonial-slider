@@ -31,6 +31,26 @@ body {
     display: none;
 }
 
+@keyframes slide-left-in {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(0%); }
+}
+
+@keyframes slide-left-out {
+    from { transform: translateX(0%); }
+    to   { transform: translateX(-100%); }
+}
+
+@keyframes slide-right-in {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0%); }
+}
+
+@keyframes slide-right-out {
+    from { transform: translateX(0%); }
+    to   { transform: translateX(100%); }
+}
+
 .name {
     font-size: .75em;
     font-weight: 700;
@@ -56,6 +76,12 @@ body {
     margin-top: 40px;
     margin-right: 140px;
     box-shadow: 0 30px 70px -40px hsl(262, 50%, 50%);
+}
+
+.image-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .buttons {
